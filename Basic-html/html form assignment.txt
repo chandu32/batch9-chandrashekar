@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Design and create form </title>
+</head>
+
+<body>
+    <h1>Form submission</h1>
+    <p>creating a form to the users</p>
+
+
+<form>
+    <label for="fname">First name:</label><br>
+    <input type="text"id="fname" placeholder="First name" name="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" placeholder="Last name" name="lname"><br>
+
+<p><strong> Enter your gender</strong></p>
+    <input type="radio" id="male" name="gender" value="male">
+    <lable for="male">Male</lable><br>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label><br>
+
+    <p><strong>Enter your DOB</strong></p>
+    <label for="birthday">DOB:</label>
+    <input type="date" id="birthday" name="birthday">
+
+    <p><strong> Enter phone number</strong></p>
+    <lable for="phone">Enter a phone number</lable><br><br>
+    <input type="tel" id="phone" name="phone">
+
+    <p><strong>Enter your hobbies</strong></p>
+    <label for="hobbies">What are your hobbies</label>
+    <select name="hobbies" id="hobbies">
+        <option value="cricket">football</option>
+        <option value="kabadi">kabadi</option>
+        <option value="football">cricket</option>
+        <option value="hockey">hockey</option><br>
+
+    
+    </select>
+
+    <p><strong>create your password</strong></p>
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password"><br><br>
+    <label for="confirm password">confirm password</label>
+    <input type="confirm password" id="confirm password" name="confirm password"><br>
+
+    <input type="submit" value="Submit">
+
+
+
+</form>
+</body>
+</html>
