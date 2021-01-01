@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Management Project</title>
+        <link rel="stylesheet" href="project.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous" />
+
+    </head>
+    <body>
+        <h1>USER MANAGEMENT</h1>
+        <div class="pull-right">
+            <button type="button" class="btn" onclick="switchForms('login')">Login</button>
+            <button type="button" class="btn" onclick="switchForms('CreateAccount')">CreateAccount</button>
+        </div>
+        <div class="container" id="loginform">
+           <form>
+               <div class="form-group">
+                 
+                <label for="email"><b>Email: </b></label>
+                <input type="email" id="email" placeholder="Enter Email"><br>
+                    
+                  
+                    <label for="password"><b>Password: </b></label>
+                    <input type="password" id="password" placeholder="Enter Password"><br>
+                   
+    
+                <button type="button" class="btn" onclick="login()">Login</button>
+               </div>
+           </form>
+        </div>
+
+        <div class="container" style="display: none;" id="createaccountform">
+            <form>
+                <div class="form-group">
+
+                    
+            <label for="fname"><b>FirstName: </b></label>
+            <input type="text" id="fname" placeholder="Enter FirstName"><br>
+                        
+
+                    
+            <label for="lname"><b>LastName: </b></label>
+            <input type="text" id="lname" placeholder="Enter LastName"><br>
+                        
+                
+            <label for="email"><b>Email: </b></label>
+            <input type="email" id="createaccountemail" placeholder="Enter Email"><br>
+                        
+             
+            <label for="password"><b>Password: </b></label>
+            <input type="password" id="createaccountpassword" placeholder="Enter Password"><br>
+                        
+        
+            <label for="conformpassword"><b>Conform Password: </b></label>
+            <input type="password" id="conformpassword" placeholder="Enter Conform Password"><br>
+                       
+        
+            <label for="age"><b>Age: </b></label>
+            <input type="number" id="age" placeholder="Enter Age"><br>
+
+            <label for="gender"><b>Gender: </b></label><br>
+            <input type="radio" class="r" id="male" value="male"> Male<br>
+            <input type="radio" class="r" id="female" value="female"> Female<br> 
+
+            <label for="hero"><b>Favorite Hero: </b></label>
+            <select name="hero" id="hero">
+                <option value="Rajini">Rajini</option>
+                <option value="Kamal"> Kamal</option>
+                <option value="Vijay">Vijay</option>
+                <option value="Ajith">Ajith</option>
+              </select>
+  
+            
+
+            <button type="button" class="btn" onclick="CreateAccount()">CreateAccount</button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <script src="project.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+           });
+        </script>
+    </body>
+</html>

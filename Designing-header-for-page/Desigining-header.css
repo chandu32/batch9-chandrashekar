@@ -17,7 +17,7 @@
 }
 .Designing-header ul li
 {
-    width: 100%;
+    width: 90%;
     margin: 15px;
     padding: 2px;
 }
@@ -27,7 +27,7 @@
     text-decoration: none;
     color: white;
 }
-.active, .Designing-header ul li:hover
+.Designing-header ul li:hover
 {
     background-color: rgb(25, 204, 25);
     border-radius: none;
@@ -49,6 +49,30 @@
     display: block;
     margin: 10px;
 }
+nav ul {
+    float: left;
+    width: 15%;
+    height: 500px;
+    background-color:whitesmoke;
+    padding: 20px;
+    text-align: center;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+nav ul li a{
+    float: left;
+}
+nav ul li:hover {
+    background-color: green;
+}
+.content {
+    width: 70%;
+    float: left;
+    padding: 40px;
+    display: table;
+    background-color:white
+}
+
 
 
 

@@ -3,7 +3,17 @@
     <head>
         <title>Designing a header for a page</title>
         <link rel="stylesheet" href="Desigining-header.css"> 
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
+            @media screen and (max-width: 700px) {
+   div.Designing-header {   
+    display: none;
+  }
+  nav {
+      display: none;
+  }
+}
             h1{
                 color: rgb(0, 128, 49);
                 text-align: left;
@@ -21,6 +31,12 @@
             .textcenter{
                 text-align: right;
             }
+            .dropdownClass {
+                background: gray;color: white;order: none;font-size: 15px;
+            }
+            .dropdownClass option {
+                padding:10px;
+            }
         </style> 
     </head>
     <body>
@@ -28,24 +44,94 @@
     <p class="textcenter"><button class="center">LOGIN</button></p>
     <div class="Designing-header">
     <ul>
-    <li class="active"><a href="#">HTML</a></li>
+    <li><i class="fa fa-home" style="font-size: 20px;"></i></li>
+    <li><a href="#">HTML</a></li>
     <li><a href="#">CSS</a></li>
     <li><a href="#">JAVASCRIPT</a></li>
     <li><a href="#">SQL</a></li>
-    <li><a href="#">PYTHON</a></li>
-    <li><a href="#">PHP</a></li>
     <li><a href="#">BOOTSTRAP</a></li>
     <li><a href="#">HOW TO</a></li>
     <li><a href="#">W3.CSS</a></li>
     <li><a href="#">JQUERY</a></li>
     <li><a href="#">JAVA</a></li>
-    <li><a href="#">EXERCISES</a></li>
+    <li>
+        <select class="dropdownClass">
+    <option>EXCERCISES</option>
+     <option>java</option>
+     <option>JS</option>
+     <option>CSS</option>
+</select>
+    </li>
     <li><a href="#">REFERENCES</a></li>
     <li><a href="#">CERTIFICATES</a></li>
+    <li><i class="fa fa-search" style="font-size: 20px;"></i></li>
     </ul>
     </div>
-
     
+
+    <nav>
+        <ul>
+            <li><h2>HTML</h2></li>
+            <li><a>HTML HOME</a></li>
+            <li><a>HTML Introduction</a></li>
+            <li><a>HTMLEditors</a></li>
+            <li><a>HTML Basic</a></li>
+            <li><a>HTML Elements</a></li>
+            <li><a>HTML Attributes</a></li>
+            <li><a>HTML Headings</a></li>
+            <li><a>HTML paragraphs</a></li>
+            <li><a>HTML Styles</a></li>
+            <li><a>HTML formatting</a></li>
+            <li><a>HTML Quotations</a></li>
+            <li><a>HTML Comments</a></li>
+            <li><a>HTML Colors</a></li>
+            <li><a>HTML CSS</a></li>
+            <li><a>HTML Links</a></li>
+            <li><a>HTML Images</a></li>
+            <li><a>HTML Tables</a></li>
+            <li><a>HTML Lists</a></li>
+            <li><a>HTML Block & Inline</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+            <li><a>HTML</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h2>HTML</h2>
+        <p>HTML stands for Hypertext Markup Language. It allows the user to create and structure sections, paragraphs, headings, links, and blockquotes for web pages and applications.
+
+            HTML is not a programming language, meaning it doesn’t have the ability to create dynamic functionality. Instead, it makes it possible to organize and format documents, similarly to Microsoft Word.
+            
+            When working with HTML, we use simple code structures (tags and attributes) to mark up a website page. For example, we can create a paragraph by placing the enclosed text within a starting <p> and closing </p> tag.
+        </p>
+        <h2>CSS</h2>
+        <p>
+            Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.[2]
+
+CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts.[3] This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file which reduces complexity and repetition in the structural content as well as enabling the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.
+
+Separation of formatting and content also makes it feasible to present the same markup page in different styles for different rendering methods, such as on-screen, in print, by voice (via speech-based browser or screen reader), and on Braille-based tactile devices. CSS also has rules for alternate formatting if the content is accessed on a mobile device.[4]
+
+The name cascading comes from the specified priority scheme to determine which style rule applies if more than one rule matches a particular element. This cascading priority scheme is predictable.
+        </p>
+       
+    </div>    
     </body>
     
 </html>

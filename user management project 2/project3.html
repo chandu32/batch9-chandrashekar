@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Provide Example</title>
+  <style>
+    h1{
+      color:indigo;
+      
+    }
+    li {
+          color:palevioletred;  
+          font-weight: bold;
+          }
+  </style>
+</head>
+<body>
+  <h1>Conditional Statements</h1>
+  <ul>
+    <li>Array</li>
+    <li>Object</li>
+    <li>If Else</li>
+    <li>If Else If</li>
+    <li>For Loop</li>
+    <li>While Loop</li>
+    <li>Do While Loop</li>
+    <li>Switch</li>
+    <li>Break</li>
+    <li>Continue</li>
+  </ul>
+  <script>
+    console.log("Array")
+
+    var students=["Sumith","Parth","Chris","Sidharth","Vijay"];
+    students.push("Ratha");         //add an element at last in array
+    students.pop();                 //remove an element at last in array
+    students.shift();               //delete an element in the beginning of array
+    students.unshift("Manik");      //add an element in the beginning of array
+    students.splice(2, 0, "Abimanyu", "Arjun");
+    students.splice(2,2,"Krishn");
+    console.log(students)
+   
+    console.log("Object")
+ var person={
+      firstName:"Manik",
+      lastName:"Malhothara",
+      age:25
+    };
+    console.log(person)
+    for (let key in person) { 
+                if (person.hasOwnProperty(key)) 
+                { 
+                    value = person[key]; 
+                    console.log(key, value); 
+                } 
+            } 
+            console.log("If Else If Statement")
+
+    var hour = new Date().getHours();  
+    if(hour<16){  
+      greetings="Have a Nice Day"
+      } if(hour>20) {
+        greetings="Good Evening"
+  }
+    else{  
+      greetings="Good Night"
+     
+        }  
+        console.log(greetings)
+        console.log("For Loop")
+
+          var user = "";
+          var i;
+        for (i = 0; i < students.length; i++) {
+          user += students[i] + " ";
+        }
+        console.log(user)
+        console.log("Do While")
+var i = 0;
+do {
+  i += 1;
+  if(i==2){
+    continue;
+  }
+  console.log(i);
+} while (i < 5);
+console.log("While")
+let count = 1;
+while (count < 10) {
+    console.log(count);
+    count +=2;
+    if(count==7){
+      break;
+    }
+}
+console.log("Switch")
+var day = 6;
+var dayName;
+switch (day) {
+    case 1:
+        dayName = 'Sunday';
+        break;
+    case 2:
+        dayName = 'Monday';
+        break;
+    case 3:
+        dayName = 'Tuesday';
+        break;
+    case 4:
+        dayName = 'Wednesday';
+        break;
+    case 5:
+        dayName = 'Thursday';
+        break;
+    case 6:
+        dayName = 'Friday';
+        break;
+    case 7:
+        dayName = 'Saturday';
+        break;
+    default:
+        dayName = 'Invalid day';
+}
+console.log(dayName); 
+</script>
+</body>  
+</html>
